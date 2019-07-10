@@ -74,10 +74,10 @@
 				var loader = new FBXLoader();
 				loader.load( 'models/fbx/bee.FBX', function ( object ) {
 
-					mixer = new THREE.AnimationMixer( object );
+					<!-- mixer = new THREE.AnimationMixer( object ); -->
 
-					var action = mixer.clipAction( object.animations[ 0 ] );
-					action.play();
+					<!-- var action = mixer.clipAction( object.animations[ 0 ] ); -->
+					<!-- action.play(); -->
 
 					object.traverse( function ( child ) {
 
