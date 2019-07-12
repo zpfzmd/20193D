@@ -27,7 +27,6 @@
 
 			var clock = new THREE.Clock();
 
-			<!-- var mixer; -->
 
 			init();
 			animate();
@@ -74,10 +73,6 @@
 				var loader = new FBXLoader();
 				loader.load( 'models/fbx/bee_test(1).FBX', function ( object ) {
 
-					<!-- mixer = new THREE.AnimationMixer( object ); -->
-
-					<!-- var action = mixer.clipAction( object.animations[ 0 ] ); -->
-					<!-- action.play(); -->
 
 					object.traverse( function ( child ) {
 
@@ -127,9 +122,6 @@
 
 				requestAnimationFrame( animate );
 
-				<!-- var delta = clock.getDelta(); -->
-
-				<!-- if ( mixer ) mixer.update( delta ); -->
 
 				renderer.render( scene, camera );
 
